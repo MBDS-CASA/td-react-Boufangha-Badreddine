@@ -1,7 +1,9 @@
 
 
 function MainContent(props){
+
     const date = new Date();
+    
     const annee = date.getFullYear()
     const jour = date.getDay()
     const mois = date.getMonth()
