@@ -1,12 +1,14 @@
+import imageUniv from '../assets/imageUniv.jpg'
 
-
-
-function Header(props){
+function Header(){
     return(
-        <Header>
-        <div>HEADER</div>
-        </Header>
+        <div>
+        <h1>Introduction à React</h1>
+        
+        <img src={imageUniv} alt="logo" />
+        <div>A la découverte des premières notions de React</div>
+        </div>
     )
 }
 
-export default Header;
+export default Header
