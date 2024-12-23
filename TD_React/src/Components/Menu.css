@@ -1,0 +1,38 @@
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu {
+
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  main {
+    margin-top: 50px;
+  }
+  

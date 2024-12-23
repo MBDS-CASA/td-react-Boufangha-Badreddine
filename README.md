@@ -52,6 +52,7 @@ npm run dev
 4. Commit avec le message “Add menu”
 5. Push
 
+
 # Session 02 : Gestion des listes dynamiques
 ## Objectifs de la session : 
 - Manipuler des listes d'objets
