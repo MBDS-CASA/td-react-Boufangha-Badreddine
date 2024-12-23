@@ -1,5 +1,6 @@
 import data from "./../../../data.json"
 import React, { useState } from "react";
+import "./FetchData.css"
 
 function FetchData(props){
     const [note, setNote] = useState(null);
