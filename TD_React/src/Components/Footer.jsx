@@ -3,7 +3,7 @@
 function Footer(){
     return(
         <div>
-                Tous droits réservés - BOUFANGHA BADREDDINE
+                © 2024 - BADREDDINE.BOUFANGHA, Tous droits réservés.
         </div>
     )
 }
