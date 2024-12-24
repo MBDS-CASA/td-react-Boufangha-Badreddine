@@ -1,28 +1,45 @@
-
+import React, { useState } from "react";
 import "./Menu.css";
 
-function menu() {
-  
+function Menu() {
+  const [activeItem, setActiveItem] = useState("Notes");
+
+
+  const menuItems = [
+    { name: "Notes", content: "Contenu du menu Notes" },
+    { name: "Étudiants", content: "Contenu du menu Étudiants" },
+    { name: "Matières", content: "Contenu du menu Matières" },
+    { name: "À propos", content: "Contenu du menu À propos" },
+  ];
+
   const handleMenuClick = (item) => {
-    alert(`Vous avez cliqué sur : ${item}`);
+    setActiveItem(item);
   };
 
   return (
     <div className="app">
       <header className="menu">
         <ul>
-          <li onClick={() => handleMenuClick("Notes")}>Notes</li>
-          <li onClick={() => handleMenuClick("Étudiants")}>Étudiants</li>
-          <li onClick={() => handleMenuClick("Matières")}>Matières</li>
-          <li onClick={() => handleMenuClick("À propos")}>À propos</li>
+          {menuItems.map((item) => (
+            <li
+              key={item.name}
+              className={activeItem === item.name ? "active" : ""}
+              onClick={() => handleMenuClick(item.name)}
+            >
+              {item.name}
+            </li>
+          ))}
         </ul>
       </header>
       <main>
-        <h1>Bienvenue dans votre application</h1>
-        <p>Cliquez sur un élément du menu pour voir l'alerte correspondante.</p>
+        {menuItems
+          .filter((item) => item.name === activeItem)
+          .map((item) => (
+            <h1 key={item.name}>{item.content}</h1>
+          ))}
       </main>
     </div>
   );
 }
 
-export default menu;
+export default Menu;

@@ -56,10 +56,11 @@ npm run dev
 # Session 02 : Gestion des listes dynamiques
 ## Objectifs de la session : 
 - Manipuler des listes d'objets
-- Utiliser de tableaux
+- Utilisation de tableaux
 - Gestion d'événements
 - Utilisation de librairies (eg. material ui)
 - Gestion dynamique de contenu
+
 
 ## Etape 1: Menu dynamique
 - Modifier le composant du Menu pour utiliser une liste afin d'éviter la répétition de codes
@@ -67,6 +68,7 @@ npm run dev
 - Créer un composent dédié pour chaque item du menu et afficher le bon composant en fonction du menu selectionné.
 > Pour l'instant, afficher simplement un text avec le nom du menu dans le contenu de chaque composant, on les complètera dans les étapes suivantes
 - Commit avec le messaage "TD04 : Gestion de menu dynamique"
+
 
 ## Etape 2: Gestion de données des composants 
 Dans cette section, vous allez gérer le contenu des composants liés au menu en utilisant des liste d'objects statiques. Pour cela, récupérer les fichiers de données (notes.json, students.json, class.json et teachers.json) et importez les dans un dossier data de votre projet. 
@@ -84,4 +86,5 @@ Dans cette section, vous allez gérer le contenu des composants liés au menu en
 
 
 
+BOUFANGHA BADREDDINE 
  

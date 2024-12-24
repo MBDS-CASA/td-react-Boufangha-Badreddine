@@ -1,38 +1,37 @@
 .app {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu {
+  font-family: Arial, sans-serif;
+}
 
-    color: white;
-    padding: 10px;
-    text-align: left;
-  }
+.menu {
   
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .menu li {
-    margin-right: 20px;
-    cursor: pointer;
-    padding: 10px;
-    color: white;
-    font-size: 18px;
-  }
-  
-  .menu li:hover {
-    background-color: #555;
-    border-radius: 4px;
-  }
-  
-  main {
-    margin-top: 50px;
-  }
-  
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.menu li.active {
+  background-color: #28d2b3;
+  font-weight: bold;
+}
+
+.menu li:hover {
+  background-color: #28d2b3;
+}
+
+main {
+  margin-top: 20px;
+  text-align: center;
+}
